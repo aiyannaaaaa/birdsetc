@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants.</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+</head>
+<style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    }
+
+    canvas {
+    display: block;
+    }
+    .arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    color: white; 
+    text-decoration: none;  
+    }
+  
+    .arrow:hover {
+    text-decoration: underline; 
+    }
+</style>
+<body>
+    <audio id="background-audio" loop autoplay>
+        <source src="assets/ambient-noise-236388.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    <a href="choose.html" class="arrow">←</a>
+    <script src="plants.js"></script> 
+</body>
+</html>

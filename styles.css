@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    font-family: 'Garamond Pro', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center-text-container {
+    text-align: center;
+}
+
+.center-text {
+    font-size: 5rem; 
+}
+
+.text-banner {
+    position: relative;
+    margin-top: 20px;
+    height: 1.5rem; 
+    overflow: hidden; 
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-banner a {
+    display: inline-block;
+    white-space: nowrap; 
+    color: #ffffff; 
+    text-decoration: none; 
+    animation: move-text 5s linear infinite;
+}
+
+.text-banner a:hover {
+    text-decoration: underline; 
+}
+
+@keyframes move-text {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
